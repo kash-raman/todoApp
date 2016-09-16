@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title> ToDo Application
+  </title>
+
+</head>
+<body >
+  <div ng-app="todoApp">
+  Here is the basic application setup.
+  <br>
+<!--
+  <div ng-controller="twoWayBindingCtrl">
+    <label for="fname"> First name: </label>
+    <input type="text" id="fname" ng-model="$ctrl.first"/>
+    <br>
+    <br>
+    <label for="lname"> Last name: </label>
+    <input type="text" id="lname"  ng-model="$ctrl.last"/>
+    <br>
+    <br>
+    <label id="fullName"> {{$ctrl.fullname}} </label>
+
+    <br>
+    <input type="button" id="concat" value="Concat" />
+  </div>
+-->
+<div>
+  	<h1>Hello {{name}}</h1>
+ 	<p>Name : <input type="text" ng-model="name"></p>
+
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script  src="./static/js/app.js" ></script>
+  <!--
+<script>
+    var app = angular.module('todoApp',[]);
+</script> -->
+</body>
+</html>

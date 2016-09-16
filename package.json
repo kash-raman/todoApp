@@ -1,0 +1,13 @@
+{
+  "name": "todoApp",
+  "version": "0.0.1",
+  "main":"server.js",
+  "author":"Kash",
+  "description": "Angular 101",
+  "dependencies": {
+    "fs": "latest",
+    "path": "latest",
+    "http" : "latest"
+  }
+
+}
