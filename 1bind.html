@@ -1,40 +1,62 @@
-<html>
-<head>
-  <title> ToDo Application
-  </title>
 
-</head>
-<body >
-  <div ng-app="todoApp">
-  Here is the basic application setup.
-  <br>
-<!--
-  <div ng-controller="twoWayBindingCtrl">
-    <label for="fname"> First name: </label>
-    <input type="text" id="fname" ng-model="$ctrl.first"/>
-    <br>
-    <br>
-    <label for="lname"> Last name: </label>
-    <input type="text" id="lname"  ng-model="$ctrl.last"/>
-    <br>
-    <br>
-    <label id="fullName"> {{$ctrl.fullname}} </label>
+        <div   ng-init="name:'example'">
+            Here is the basic application setup.
+            <br>
 
-    <br>
-    <input type="button" id="concat" value="Concat" />
-  </div>
--->
-<div>
-  	<h1>Hello {{name}}</h1>
- 	<p>Name : <input type="text" ng-model="name"></p>
+            <hr/>
 
-</div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-<script  src="./static/js/app.js" ></script>
-  <!--
-<script>
-    var app = angular.module('todoApp',[]);
-</script> -->
-</body>
-</html>
+            <div>
+                {{test}} one way binding here:
+                <h1>Hello
+                    {{name}}</h1>
+                <p>Name :
+                    <input type="text" ng-model="name"></p>
+
+                <br/>
+                Binding tag:
+                <p ng-bind="name"></p>
+
+            </div>
+            <hr/>
+            <div loop-directive></div>
+            <div ng-controller="loopme">
+                <ul>
+                    <li ng-repeat="x in names | orderBy:x">
+                        {{ x |uppercase }}
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+
+                <div ng-controller="twoWayBindingCtrl">
+                    {{test}} 2 way way binding here:
+                    <label for="fname">
+                        First name:
+                    </label>
+                    <input type="text" id="fname" ng-model="first"/>
+                    <br>
+                    <br>
+                    <label for="lname">
+                        Last name:
+                    </label>
+                    <input type="text" id="lname" ng-model="last"/>
+                    <br>
+                    <br>
+                    <label id="combo">
+                        Comb of fist n last name
+                        {{last}}
+                        ,
+                        {{first}}</label>
+                    <br >
+                    <label id="full">
+                        how to make this work...Full name is using ng-init is
+                        {{fullname()}}
+                    </label>
+
+                    <br>
+
+                </div>
+            </div>
+            <hr/>
+        </div>
