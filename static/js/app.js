@@ -7,9 +7,9 @@
       template : "<H1> welcome</H1>"
     })
     .when("/binder", {
-      templateUrl : "1bind.html"
+      templateUrl : "static/view/1bind.html"
     }).when("/one", {
-      templateUrl : "test.html"
+      templateUrl : "static/view/test.html"
     });
   });
   app.controller('twoWayBindingCtrl', function($scope) {
