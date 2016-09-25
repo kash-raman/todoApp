@@ -10,5 +10,8 @@ header.config(function($routeProvider){
   .when("/contact",{
     templateUrl:"static/view/header/contact.html"
 
+  }).when("/grocery",{
+    templateUrl:"static/view/grocery/welcome.html"
+
   });
 });

@@ -1,8 +1,9 @@
-  var grocery = angular.module('groceryApp', ["ngRoute"]);
+var grocery = angular.module('groceryApp', ["ngRoute"]);
 
-  grocery.config(function($routeProvider){
-    $routeProvider.when("/", {
-      template : "<H1> welcome</H1>"
-    });
-
+grocery.config(function($routeProvider){
+  $routeProvider.when("/", {
+    template : "<h1> welcome</h1>"
   });
+
+});
+angular.bootstrap(document.getElementById("groceryApplication"), ['groceryApp']);
