@@ -7,3 +7,9 @@ grocery.config(function($routeProvider){
 
 });
 angular.bootstrap(document.getElementById("groceryApplication"), ['groceryApp']);
+
+grocery.controller("groceryMaintainence",function($scope){
+  $scope.add = function(){
+      return "Added";
+  };
+});

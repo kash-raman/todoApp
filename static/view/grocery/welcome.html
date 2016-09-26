@@ -1,2 +1,6 @@
-<h1> Welcome to grocery buy list</h1>
-<h2>Please use the below links to add remove edit grocery list</h2>
+<h1> My List <a role="button" class="btn btn-info" href="#/grocery/add">Add</a></h1>
+
+ 
+<div ng-repeat="x in master">
+  <h3> {{x.taskName}} {{x.taskDueDate}}</h3>
+</div>
