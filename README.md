@@ -18,10 +18,11 @@ Expected: confirm the application is coming up.
 **Step 2:** 
 Docker :
 create a docker account in dockerhub. 
-'''
+
+```
 docker build -t krangan/todo-web-app:latest .
 docker push krangan/todo-web-app
-'''
+```
 
 **Step 3:**
 Kubernates: 
