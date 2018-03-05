@@ -1,0 +1,15 @@
+#YML file used to create pods using k8
+#kubectl create -f todo-web-app.yml
+apiVersion: v1 
+kind: Pod
+metadata:
+  name: todo-app
+  labels:
+    app: todo-app
+spec:
+  containers:
+  - name: todo-app
+    image: krangan/todo-web-app:0.1
+    ports:
+    - containerPort: 9000
+

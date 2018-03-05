@@ -1,0 +1,16 @@
+#YML file used to create pods using k8
+#kubectl create -f todo-web-app.yml
+apiVersion: v1 
+kind: Service
+metadata:
+  name: todo-service
+  labels:
+  name: todo-app
+spec:
+  type: NodePort
+  ports:
+  - port: 80
+    targetPort: 9000
+  selector: 
+    app:  todo-app
+
