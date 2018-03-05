@@ -7,10 +7,10 @@ docker
 node 
 
 **Step 1:**
-'''
+```
 npm install
 npm start
-'''
+```
 go to http://localhost:9000/ 
 
 Expected: confirm the application is coming up.
@@ -29,7 +29,7 @@ Kubernates:
 setup kubectl and minikube if local
 
 Use yml to setup cluster and ping url. 
-'''
+```
 kubectl create -f k8-deploy-todo.yml
 
 kubectl create -f k8-service-todo.yml
@@ -37,7 +37,9 @@ kubectl create -f k8-service-todo.yml
 minikube service todo-app --url
 
 curl $(minikube service todo-app --url)
-'''
+```
+
+
 **Todo:**
 1. Try loadbalance, print pod,node name.
 2. parameterize and reduce the app-name
