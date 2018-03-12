@@ -9,10 +9,5 @@ script:
 - docker build . -t krangan/todo-app
 
 after_success:
- - export REPO= krangan/todo-app
  - docker login -u $DOCKER_USER -p $DOCKER_PASS
- - if [[ $TRAVIS_PULL_REQUEST == "false" ]] && [[ $TRAVIS_BRANCH == "master" ]]; then
-   docker tag $REPO:$TAG $REPO:$TRAVIS_BUILD_NUMBER;
-   docker push $REPO:$TRAVIS_BUILD_NUMBER;
-   fi
- - docker push $REPO:$TAG
+ - docker push krangan/todo-app:$TAG
