@@ -1,4 +1,4 @@
-# todoApp
+# todoApp      [![Build Status](https://travis-ci.org/kash-raman/todoApp.svg?branch=master)](https://travis-ci.org/kash-raman/todoApp)
 Basic angular app deployed in cluster using k8 and docker. 
 
 ##Prerequisite: 
