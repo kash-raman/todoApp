@@ -11,6 +11,6 @@ script:
 after_success:
  - docker login -u $DOCKER_USER -p $DOCKER_PASS
  - docker push krangan/todo-app:latest
- - docker tag kash-raman:latest 786833643927.dkr.ecr.us-east-1.amazonaws.com/todo-app:latest
+ - docker tag todo-app:latest 786833643927.dkr.ecr.us-east-1.amazonaws.com/todo-app:latest
  - docker push 786833643927.dkr.ecr.us-east-1.amazonaws.com/todo-app:latest
 
